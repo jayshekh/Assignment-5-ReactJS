@@ -1,10 +1,10 @@
 import React from "react";
-import dataFetch from "./dataFetch";
+import useFetch from "./useFetch";
 import "./productList.css";
 
 const ProductList = () =>
 {
-    const { data, loading, error } = dataFetch(
+    const { data, loading, error } = useFetch(
         "https://api.escuelajs.co/api/v1/products"
     );
 
